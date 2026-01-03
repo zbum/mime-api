@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: mime-api
-          image: mime-api:latest
+          image: registry.manty.co.kr/mime-api:latest
           ports:
             - containerPort: 8080
           resources:
