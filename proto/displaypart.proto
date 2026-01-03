@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+package displaypart;
+
+option go_package = "mime_api/proto";
+
+service DisplayPartService {
+  rpc ExtractDisplayPart(ExtractRequest) returns (ExtractResponse);
+  rpc ExtractDisplayPartStream(stream FileChunk) returns (ExtractResponse);
+  rpc Health(HealthRequest) returns (HealthResponse);
+}
+
+message ExtractRequest {
+  bytes eml_content = 1;
+}
+
+message ExtractResponse {
+  string content = 1;
+  string content_type = 2;
+  string error = 3;
+}
+
+message HealthRequest {}
+
+message HealthResponse {
+  string status = 1;
+}
+
+message FileChunk {
+  bytes data = 1;
+}
