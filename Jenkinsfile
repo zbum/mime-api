@@ -44,6 +44,26 @@ pipeline {
                 }
             }
         }
+
+        stage('Deploy to Kubernetes') {
+            steps {
+                withCredentials([file(credentialsId: 'kubeconfig', variable: 'KUBECONFIG')]) {
+                    sh """
+                        # 이미지 태그를 빌드 번호로 업데이트
+                        sed -i 's|image: ${DOCKER_REGISTRY}/${IMAGE_NAME}:.*|image: ${DOCKER_REGISTRY}/${IMAGE_NAME}:${IMAGE_TAG}|' k8s/deployment.yaml
+
+                        # Kubernetes 리소스 적용
+                        kubectl apply -f k8s/namespace.yaml
+                        kubectl apply -f k8s/deployment.yaml
+                        kubectl apply -f k8s/service.yaml
+                        kubectl apply -f k8s/ingress.yaml
+
+                        # 배포 완료 대기
+                        kubectl rollout status deployment/mime-api -n mime-api --timeout=300s
+                    """
+                }
+            }
+        }
     }
 
     post {
