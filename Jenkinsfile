@@ -6,7 +6,7 @@ pipeline {
     }
 
     environment {
-        DOCKER_REGISTRY = 'docker.manty.co.kr'
+        DOCKER_REGISTRY = 'registry.manty.co.kr'
         IMAGE_NAME = 'mime-api'
         IMAGE_TAG = "${env.BUILD_NUMBER}"
     }
