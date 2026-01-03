@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mime-api
+  namespace: mime-api
+  labels:
+    app: mime-api
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: mime-api
+  template:
+    metadata:
+      labels:
+        app: mime-api
+    spec:
+      containers:
+        - name: mime-api
+          image: mime-api:latest
+          ports:
+            - containerPort: 8080
+          resources:
+            requests:
+              memory: "64Mi"
+              cpu: "100m"
+            limits:
+              memory: "128Mi"
+              cpu: "200m"
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 8080
+            initialDelaySeconds: 5
+            periodSeconds: 10
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 8080
+            initialDelaySeconds: 5
+            periodSeconds: 10

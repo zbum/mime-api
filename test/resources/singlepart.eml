@@ -1,0 +1,224 @@
+Received: from [10.159.4.149] (HELO FireEye-EX5500-2.localdomain)
+ ([10.159.4.149]) by recv004.dooray.com with SMTP id 8fde725c694e30c9; Fri,
+ 26 Dec 2025 15:52:57 +0900
+Received: by FireEye-EX5500-2.localdomain (Postfix, from userid 600)
+	id 4dcxBx40gpzMT1Jl; Fri, 26 Dec 2025 15:52:52 +0900 (KST)
+Received: from drca-filterapp-wb904.dooray.com (unknown [10.165.160.151])
+	by FireEye-EX5500-2.localdomain (Postfix) with ESMTP id 4dcxBk6kMNzMT1KG
+	for <jibum.jung@nhndooray.com>; Fri, 26 Dec 2025 15:52:46 +0900 (KST)
+X-DOORAY-SPAM: NONE
+Received-SPF: pass (180.210.67.77: SPF record at _spfblocka.toast.com designates 103.132.33.218 as permitted sender)
+Authentication-Results: drca-filtermng-wa901.dooray.com;
+	dkim=pass (1024-bit key) header.d=nhncloud.com header.i=@nhncloud.com header.b=NQy+lNYB;
+	spf=pass (180.210.67.77: SPF record at _spfblocka.toast.com designates 103.132.33.218 as permitted sender) smtp.mailfrom=noreply@nhncloud.com
+Received: from unknown (HELO smtp403.toastcloud.com) (103.132.33.218)
+	by 180.210.67.77 with ESMTP; 26 Dec 2025 15:52:46 +0900
+X-Original-SPF: pass (localhost: SPF record at _spfblocka.toast.com designates 103.132.33.218 as permitted sender)
+X-Original-SENDERIP: 103.132.33.218
+X-Original-SENDERCOUNTRY: KR, South Korea
+X-Original-MAILFROM: noreply@nhncloud.com
+X-Original-RCPTTO: jibum.jung@nhndooray.com
+Received: from [10.170.128.29] (HELO mmsa-batchnor-p1901.svr.toastmaker.net)
+ ([10.170.128.29]) by smtp403.toastcloud.com with SMTP id f1c9b2d1694e30be;
+ Fri, 26 Dec 2025 15:52:46 +0900
+Date: Fri, 26 Dec 2025 15:52:46 +0900 (KST)
+From: NHN Cloud <noreply@nhncloud.com>
+To: jibum.jung@nhndooray.com
+Message-ID: <202512261552351iKiSVE0@mmsa-batchnor-p1901.svr.toastmaker.net330>
+Subject: =?utf-8?B?IFvst6jslb3soJBdIG44biDsoJztkogg67O07JWIIOyXhQ==?=
+ =?utf-8?B?642w7J207Yq4IOq2jOqzoChDVkUtMjAyNS02ODYxMyk=?=
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+Precedence: bulk
+X-Toast-Seq: 330
+X-Toast-Return-Allow: false
+DKIM-Signature: a=rsa-sha256; q=dns/txt; b=NQy+lNYBsHG8ZfS2nBUlhsRgVzALR+V79NlK2aaesE0kVLlnMTslSb/39Xft9FjLMbK0r51cTird0v2bSnF/EgiY/UXWDDY0C8lTJ/JQ718LbX6lfd5qsK982H11pQIDL7GhHky8vgG+hVofaK2r7EHvVXFARegWTnJdwd2T/tA=; s=toast; c=relaxed/relaxed; d=nhncloud.com; v=1; bh=vYEctV5UkQWoOP6SiFllpg8oS38CZisAP6lZJvGQR5w=; h=Date:From:To:Subject:Precedence:X-Toast-Return-Allow:X-Toast-Seq:List-Unsubscribe-Post:List-Unsubscribe;
+Authentication-Results: mx.dooray.com;
+  spf=pass clientip=103.132.33.218 envelop.from=@nhncloud.com spf.header=pass header.from=noreply@nhncloud.com;
+  dkim=pass (signature was verified) header.d=nhncloud.com;
+  dmarc=pass header.from=nhncloud.com
+
+<meta charset=3D"utf-8">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"width:900p=
+x;margin:0 auto;border-spacing: 0">
+    <tbody>
+    <tr>
+        <td style=3D"width:40px" rowspan=3D"4"></td>
+        <td style=3D"width:820px;padding:40px 0 20px;border-bottom:1px soli=
+d #dddddd;font-size:0;"><img src=3D"http://static.toastoven.net/common/logo=
+_NHNCLOUD.png" alt=3D"NHN Cloud"></td>
+        <td style=3D"width:40px" rowspan=3D"4"></td>
+    </tr>
+    <tr>
+        <td style=3D"width:820px;padding:32px 0 60px;">
+            <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=
+=3D"width:100%;border-spacing: 0">
+                <tbody>
+                <tr>
+                    <td style=3D"font-family:apple gothic,dotum,=EB=8F=8B=
+=EC=9B=80,san-serif;font-size:22px;color:#111;line-height:26px">[=EC=B7=A8=
+=EC=95=BD=EC=A0=90] n8n =EC=A0=9C=ED=92=88 =EB=B3=B4=EC=95=88 =EC=97=85=EB=
+=8D=B0=EC=9D=B4=ED=8A=B8 =EA=B6=8C=EA=B3=A0(CVE-2025-68613)</td>
+                </tr>
+                <tr>
+                    <td style=3D"height:16px"></td>
+                </tr>
+                <tr>
+                    <td style=3D"font-family:apple gothic,dotum,=EB=8F=8B=
+=EC=9B=80,san-serif;font-size:14px;color:#555;line-height:26px"><div data-r=
+eplace-mark=3D"nca">=EC=97=94=EC=97=90=EC=9D=B4=EC=B9=98=EC=97=94=ED=81=B4=
+=EB=9D=BC=EC=9A=B0=EB=93=9C=E3=88=9C =EC=97=90=EC=84=9C =EC=A0=9C=EA=B3=B5=
+=ED=95=98=EB=8A=94 "=ED=86=B5=ED=95=A9 =ED=81=B4=EB=9D=BC=EC=9A=B0=EB=93=9C=
+ =EC=84=9C=EB=B9=84=EC=8A=A4" NHN Cloud=EB=A5=BC =EC=9D=B4=EC=9A=A9=ED=95=
+=B4 =EC=A3=BC=EC=8B=9C=EB=8A=94 =EA=B3=A0=EA=B0=9D=EB=8B=98=EA=BB=98 =EA=B0=
+=90=EC=82=AC=EC=9D=98 =EB=A7=90=EC=94=80=EC=9D=84 =EB=93=9C=EB=A6=BD=EB=8B=
+=88=EB=8B=A4.</div><div data-replace-mark=3D"nca" /><div data-replace-mark=
+=3D"nca"><br></div><div data-replace-mark=3D"nca" /><div data-replace-mark=
+=3D"nca">n8n =EC=A0=9C=ED=92=88=EC=97=90=EC=84=9C =EB=B0=9C=EC=83=9D=ED=95=
+=98=EB=8A=94 =EC=B7=A8=EC=95=BD=EC=A0=90=EC=9D=84 =ED=95=B4=EA=B2=B0=ED=95=
+=9C =EB=B3=B4=EC=95=88 =EC=97=85=EB=8D=B0=EC=9D=B4=ED=8A=B8=EA=B0=80 =EB=B0=
+=9C=ED=91=9C=EB=90=98=EC=96=B4 =EC=95=88=EB=82=B4=EB=93=9C=EB=A6=BD=EB=8B=
+=88=EB=8B=A4.</div><div data-replace-mark=3D"nca" /><div data-replace-mark=
+=3D"nca"><br></div><div data-replace-mark=3D"nca" /><div data-replace-mark=
+=3D"nca">=EC=9E=90=EC=84=B8=ED=95=9C =EC=82=AC=ED=95=AD=EC=9D=80 =EC=95=84=
+=EB=9E=98 =EB=82=B4=EC=9A=A9=EC=9D=84 =EC=B0=B8=EA=B3=A0 =EB=B6=80=ED=83=81=
+=EB=93=9C=EB=A6=BD=EB=8B=88=EB=8B=A4.</div><div data-replace-mark=3D"nca" /=
+><div contenteditable=3D"false"><hr></div><ul><li><div data-replace-mark=3D=
+"nca">CVE =EC=8B=9D=EB=B3=84=EC=9E=90</div><div data-replace-mark=3D"nca" /=
+><ul><li><div data-replace-mark=3D"nca">CVE-2025-68613</div><div data-repla=
+ce-mark=3D"nca" /><div data-replace-mark=3D"nca"><br></div><div data-replac=
+e-mark=3D"nca" /></li></ul></li><li><div data-replace-mark=3D"nca">=EC=B7=
+=A8=EC=95=BD=EC=A0=90 =EC=9D=B4=EB=A6=84</div><div data-replace-mark=3D"nca=
+" /><ul><li><div data-replace-mark=3D"nca">=EC=9B=90=EA=B2=A9 =EC=BD=94=EB=
+=93=9C =EC=8B=A4=ED=96=89(RCE) =EC=B7=A8=EC=95=BD=EC=A0=90</div><div data-r=
+eplace-mark=3D"nca" /><div data-replace-mark=3D"nca"><br></div><div data-re=
+place-mark=3D"nca" /></li></ul></li><li><div data-replace-mark=3D"nca">=EC=
+=B7=A8=EC=95=BD=EC=A0=90 =EB=93=B1=EA=B8=89</div><div data-replace-mark=3D"=
+nca" /><ul><li><div data-replace-mark=3D"nca">NIST: N/A</div><div data-repl=
+ace-mark=3D"nca" /></li><li><div data-replace-mark=3D"nca">CNA: Critical(9.=
+9)</div><div data-replace-mark=3D"nca" /><div data-replace-mark=3D"nca"><br=
+></div><div data-replace-mark=3D"nca" /></li></ul></li><li><div data-replac=
+e-mark=3D"nca">=EC=B7=A8=EC=95=BD=EC=A0=90 =EC=84=A4=EB=AA=85</div><div dat=
+a-replace-mark=3D"nca" /><ul><li><div data-replace-mark=3D"nca">0.211.0 =EB=
+=B2=84=EC=A0=84=EB=B6=80=ED=84=B0 1.120.4, 1.121.1, 1.122.0 =EC=9D=B4=EC=A0=
+=84 =EB=B2=84=EC=A0=84=EC=9D=98 n8n=EC=97=90=EC=84=9C =EC=9B=8C=ED=81=AC=ED=
+=94=8C=EB=A1=9C =ED=91=9C=ED=98=84=EC=8B=9D =ED=8F=89=EA=B0=80 =EC=8B=9C=EC=
+=8A=A4=ED=85=9C =EB=82=B4 =EB=B0=9C=EC=83=9D=ED=95=98=EB=8A=94 =EC=9B=90=EA=
+=B2=A9 =EC=BD=94=EB=93=9C =EC=8B=A4=ED=96=89(RCE) =EC=B7=A8=EC=95=BD=EC=A0=
+=90(CVE-2025-68613)</div><div data-replace-mark=3D"nca" /><div data-replace=
+-mark=3D"nca"><br></div><div data-replace-mark=3D"nca" /></li></ul></li><li=
+><div data-replace-mark=3D"nca">PoC =EC=83=81=ED=83=9C</div><div data-repla=
+ce-mark=3D"nca" /><ul><li><div data-replace-mark=3D"nca">=EA=B3=B5=EA=B0=9C=
+</div><div data-replace-mark=3D"nca" /><div data-replace-mark=3D"nca"><br><=
+/div><div data-replace-mark=3D"nca" /></li></ul></li><li><div data-replace-=
+mark=3D"nca">=EC=98=81=ED=96=A5=EB=B0=9B=EB=8A=94 =EB=B2=84=EC=A0=84 =EB=B0=
+=8F =ED=95=B4=EA=B2=B0 =EB=B2=84=EC=A0=84</div><div data-replace-mark=3D"nc=
+a" /><ul><li><div data-replace-mark=3D"nca">=EC=98=81=ED=96=A5=EB=B0=9B=EB=
+=8A=94 =EB=B2=84=EC=A0=84</div><div data-replace-mark=3D"nca" /><ul><li><di=
+v data-replace-mark=3D"nca">0.211.0~1.120.4, 1.121.1, 1.122.0 =EB=AF=B8=EB=
+=A7=8C</div><div data-replace-mark=3D"nca" /></li></ul></li><li><div data-r=
+eplace-mark=3D"nca">=ED=95=B4=EA=B2=B0 =EB=B2=84=EC=A0=84</div><div data-re=
+place-mark=3D"nca" /><ul><li><div data-replace-mark=3D"nca">1.120.4, 1.121.=
+1, 1.122.0 =EC=9D=B4=EC=83=81</div><div data-replace-mark=3D"nca" /><div da=
+ta-replace-mark=3D"nca"><br></div><div data-replace-mark=3D"nca" /></li></u=
+l></li></ul></li><li><div data-replace-mark=3D"nca">=EC=B0=B8=EA=B3=A0 =EC=
+=82=AC=EC=9D=B4=ED=8A=B8</div><div data-replace-mark=3D"nca" /><ul><li><div=
+ data-replace-mark=3D"nca"><a href=3D"https://nvd.nist.gov/vuln/detail/CVE-=
+2025-68613">https://nvd.nist.gov/vuln/detail/CVE-2025-68613</a></div><div d=
+ata-replace-mark=3D"nca" /></li><li><div data-replace-mark=3D"nca"><a href=
+=3D"https://github.com/n8n-io/n8n/commit/08f332015153decdda3c37ad4fcb9f7ba1=
+3a7c79">https://github.com/n8n-io/n8n/commit/08f332015153decdda3c37ad4fcb9f=
+7ba13a7c79</a></div><div data-replace-mark=3D"nca" /></li><li><div data-rep=
+lace-mark=3D"nca"><a href=3D"https://github.com/n8n-io/n8n/commit/1c933358a=
+cef527ff61466e53268b41a04be1000">https://github.com/n8n-io/n8n/commit/1c933=
+358acef527ff61466e53268b41a04be1000</a></div><div data-replace-mark=3D"nca"=
+ /></li><li><div data-replace-mark=3D"nca"><a href=3D"https://github.com/n8=
+n-io/n8n/commit/39a2d1d60edde89674ca96dcbb3eb076ffff6316">https://github.co=
+m/n8n-io/n8n/commit/39a2d1d60edde89674ca96dcbb3eb076ffff6316</a></div><div =
+data-replace-mark=3D"nca" /></li><li><div data-replace-mark=3D"nca"><a href=
+=3D"https://github.com/n8n-io/n8n/security/advisories/GHSA-v98v-ff95-f3cp">=
+https://github.com/n8n-io/n8n/security/advisories/GHSA-v98v-ff95-f3cp</a></=
+div><div data-replace-mark=3D"nca" /></li></ul></li></ul><div contenteditab=
+le=3D"false"><hr></div><div data-replace-mark=3D"nca">NHN Cloud=EC=97=90 =
+=EB=8C=80=ED=95=9C =EC=A7=80=EC=86=8D=EC=A0=81=EC=9D=B8 =EA=B4=80=EC=8B=AC=
+=EC=97=90 =EA=B0=90=EC=82=AC=EB=93=9C=EB=A6=AC=EB=A9=B0, =EC=95=9E=EC=9C=BC=
+=EB=A1=9C=EB=8F=84 =EB=8D=94 =EB=82=98=EC=9D=80 =EC=84=9C=EB=B9=84=EC=8A=A4=
+=EB=A5=BC =EC=A0=9C=EA=B3=B5=ED=95=A0 =EC=88=98 =EC=9E=88=EB=8F=84=EB=A1=9D=
+ =EB=85=B8=EB=A0=A5=ED=95=98=EA=B2=A0=EC=8A=B5=EB=8B=88=EB=8B=A4.</div><div=
+ data-replace-mark=3D"nca" /><div data-replace-mark=3D"nca"><br></div><div =
+data-replace-mark=3D"nca" /><div data-replace-mark=3D"nca">=EB=AC=B8=EC=9D=
+=98 =EC=82=AC=ED=95=AD=EC=9D=B4 =EC=9E=88=EC=9C=BC=EC=8B=A0 =EA=B2=BD=EC=9A=
+=B0 NHN Cloud <a href=3D"https://www.nhncloud.com/kr/support/inquiry">=EA=
+=B3=A0=EA=B0=9D =EC=84=BC=ED=84=B0</a>=EB=A1=9C =EC=97=B0=EB=9D=BD =EC=A3=
+=BC=EC=8B=9C=EA=B8=B0 =EB=B0=94=EB=9E=8D=EB=8B=88=EB=8B=A4.</div><div data-=
+replace-mark=3D"nca" /><div data-replace-mark=3D"nca"><br></div><div data-r=
+eplace-mark=3D"nca" /><div data-replace-mark=3D"nca">=EA=B0=90=EC=82=AC=ED=
+=95=A9=EB=8B=88=EB=8B=A4.</div><div data-replace-mark=3D"nca" /></td>
+                   =20
+                </tr>
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=
+=3D"width:100%;margin:0;padding:0;">
+                <tbody>
+                <tr>
+                    <td style=3D"padding:20px 24px;background-color:#f6f6f6=
+;font-size:12px;line-height:18px;color:#777;font-family:apple gothic,dotum,=
+=EB=8F=8B=EC=9B=80,san-serif;">
+                        <table border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"max-width:594px;width:100%;font-family:'=EB=82=98=EB=88=94=
+=EA=B3=A0=EB=94=95',NanumGothic,'=EB=A7=91=EC=9D=80=EA=B3=A0=EB=94=95',Malg=
+un Gothic,'=EB=8F=8B=EC=9B=80',Dotum,Helvetica,'Apple SD Gothic Neo',Sans-s=
+erif;background-color:#f6f6f6;text-align:left">
+                            <tbody>
+                            <tr>
+                                <td colspan=3D"2" style=3D"height:8px"></td=
+>
+                            </tr>
+                            <tr>
+                                <td style=3D"width:12px;height:18px;vertica=
+l-align:top;"><span style=3D"display:inline-block;width:2px;height:2px;marg=
+in:8px 0 0;vertical-align:top;padding:0;background-color:#777;"></span></td=
+>
+                                <td style=3D"height:18px;font-size:12px;col=
+or:#777;font-family:apple gothic,dotum,=EB=8F=8B=EC=9B=80,san-serif;">=EB=
+=B3=B8 =EC=9D=B4=EB=A9=94=EC=9D=BC=EC=9D=80 =EB=B0=9C=EC=8B=A0=EC=A0=84=EC=
+=9A=A9=EC=9C=BC=EB=A1=9C =ED=9A=8C=EC=8B=A0=EB=90=98=EC=A7=80 =EC=95=8A=EC=
+=8A=B5=EB=8B=88=EB=8B=A4. =EA=B6=81=EA=B8=88=ED=95=9C =EC=82=AC=ED=95=AD=EC=
+=9D=80 <a href=3D"https://nhncloud.com/kr/support/inquiry" class=3D"blue" s=
+tyle=3D"color:#777777;font-weight:bold;text-decoration:underline;" target=
+=3D"_blank">=EA=B3=A0=EA=B0=9D=EC=84=BC=ED=84=B0</a>=EB=A1=9C =EB=AC=B8=EC=
+=9D=98=ED=95=B4=EC=A3=BC=EC=84=B8=EC=9A=94.</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td style=3D"height:16px"></td>
+                </tr>
+                <tr>
+                    <td style=3D"text-align: left; font-family: &quot;Noto =
+Sans CJK KR&quot;, =EB=82=98=EB=88=94=EA=B3=A0=EB=94=95, NanumGothic, =EB=
+=A7=91=EC=9D=80=EA=B3=A0=EB=94=95, &quot;Malgun Gothic&quot;, =EB=8F=8B=EC=
+=9B=80, Dotum, Helvetica, &quot;Apple SD Gothic Neo&quot;, sans-serif; font=
+-size: 12px; line-height: 14px; color: rgb(153, 153, 153);">=C2=A9NHN Cloud=
+ Corp. All rights reserved.</td>
+                </tr>
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td style=3D"height:40px"></td>
+    </tr>
+    </tbody>
+</table><img style=3D'display:none;' height=3D'1' width=3D'1' border=3D'0' =
+src=3D'https://email.api.nhncloudservice.com/email/v1.0/collectors/readChec=
+k/zsBfmcn0NQV8pqscHR9Xb_qs1RFg2A4_4dEF4F_n4gc?ext=3Dimg.gif' loading=3D'eag=
+er'/>
