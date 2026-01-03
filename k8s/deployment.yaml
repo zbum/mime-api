@@ -20,6 +20,9 @@ spec:
           image: registry.manty.co.kr/mime-api:latest
           ports:
             - containerPort: 8080
+              name: http
+            - containerPort: 8081
+              name: grpc
           resources:
             requests:
               memory: "64Mi"
