@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    tools {
+        go 'go-1.25'
+    }
+
     environment {
         DOCKER_REGISTRY = 'docker.manty.co.kr'
         IMAGE_NAME = 'mime-api'
